@@ -15,8 +15,5 @@
     "dom-parser": "^0.1.6",
     "get-stdin": "^7.0.0",
     "yargs": "^14.0.0"
-  },
-  "devDependencies": {
-    "pkg": "^4.4.0"
   }
 }
