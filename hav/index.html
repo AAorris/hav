@@ -11,16 +11,18 @@
     <h2 class="header" name="who">Who?</h2>
     <a id="author" name="amorris" href="https://amorris.ca/">Aaron Morris</a>
     <h2 class="header" name="what">What?</h2>
+    <a href="https://github.com/AAorris/hav">A small github repository and npm package (hav)</a>
     <p>hav aims to be the easiest way to work with HTML attributes on the command line.</p>
     <h2 class="header" name="why">Why?</h2>
     <ul name="why">
         <li>I have a launch page on my web site. I use it as my new tab page. I want to use that page to launch from the command line too.</li>
         <li>I have a news page on my web site. I want to open the latest news link from the command line.</li>
+        <li>I want to make command line tools driven by semantic HTML content on the web.</li>
     </ul>
     <h2 class="header" name="usage">Usage</h2>
     <ul name="usage">
         <li><pre class="example">curl https://hav.amorris.ca/ | hav .header</pre></li>
-        <li><pre class="example">curl https://hav.amorris.ca/ | hav .pre text</pre></li>
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav ^pre text</pre></li>
         <li><pre class="example">curl https://hav.amorris.ca/ | hav ^h2 name</pre></li>
         <li><pre class="example">curl https://hav.amorris.ca/ | hav ~why text</pre></li>
         <li><pre class="example">curl https://hav.amorris.ca/ | hav ~usage text</pre></li>
