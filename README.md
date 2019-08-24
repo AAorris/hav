@@ -10,6 +10,20 @@ npm install -g hav
 
 ## Usage
 
+*Usage*: `hav <selector> <value>`
+
+### selectors
+ - `.`: class
+ - `^`: html tag name (ex. `^pre` for all `<pre>` elements)
+ - `~`: html name (ex. `~usage` for things like `<p name="usage">`)
+ - `#`: html tag id (default)
+
+### values
+ - `outerhtml`: outer html (default)
+ - `html`: inner html
+ - `text`: text content
+ - `...`: any named attribute value on the element
+
 ```bash
 # Pass a string as stdin and grab its link from the html
 > hav link href <<< '<a id="link" href="hello/html" rel="greeting">link</a>'
