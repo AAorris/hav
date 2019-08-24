@@ -1,6 +1,6 @@
 {
   "name": "hav",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "get html attribute values",
   "main": "index.js",
   "bin": {
