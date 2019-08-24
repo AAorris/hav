@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HAV | HTML Attribute Values</title>
+    <link rel="stylesheet" href="https://amorris.ca/lib/reset.css">
+    <link rel="stylesheet" href="https://amorris.ca/lib/theme.css">
+    <link rel="stylesheet" href="https://amorris.ca/lib/timegrid.css">
+    <style>
+        body { padding-top: 0.5in; }
+        a { text-decoration: underline; }
+        h1, h2, h3 { margin-top: 3em; }
+    </style>
 </head>
 <body>
     <h1 class="header" name="title">HAV | HTML Attribute Values</h1>
     <h2 class="header" name="who">Who?</h2>
     <a id="author" name="amorris" href="https://amorris.ca/">Aaron Morris</a>
     <h2 class="header" name="what">What?</h2>
-    <a href="https://github.com/AAorris/hav">A small github repository and npm package (hav)</a>
+    <a name="amorris" href="https://github.com/AAorris/hav">A small github repository and npm package (hav)</a>
     <p>hav aims to be the easiest way to work with HTML attributes on the command line.</p>
     <h2 class="header" name="why">Why?</h2>
     <ul name="why">
-        <li>I have a launch page on my web site. I use it as my new tab page. I want to use that page to launch from the command line too.</li>
-        <li>I have a news page on my web site. I want to open the latest news link from the command line.</li>
+        <li>I have a launch page on <a name="amorris" href="https://amorris.ca/launch">my web site.</a> I want command line launch alises driven by it.</li>
+        <li>I have a <a name="amorris" href="https://amorris.ca/news/">news page on my web site.</a> I want to open the latest news link from the command line.</li>
         <li>I want to make command line tools driven by semantic HTML content on the web.</li>
+        <li>I want to encourage people to publish static HTML to the web.</li>
+        <li>I want to use unix tools to do things like "count the links on a web page"</li>
     </ul>
-    <h2 class="header" name="usage">Usage</h2>
+    <h2 class="header" name="installation">How do I install it?</h2>
+    <ul name="installation">
+        <li>npm install -g hav</li>
+    </ul>
+    <h2 class="header" name="usage">How do I use it?</h2>
     <ul name="usage">
         <li><pre class="example">curl https://hav.amorris.ca/ | hav .header</pre></li>
         <li><pre class="example">curl https://hav.amorris.ca/ | hav ^pre text</pre></li>
