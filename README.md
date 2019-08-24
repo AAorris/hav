@@ -26,6 +26,6 @@ greeting
 https://www.windfinder.com/forecast/jericho_beach_park
 
 # Open a#wind.href on a mac
-> curl https://amorris.ca/launch | hav wind href
+> curl https://amorris.ca/launch | hav wind href | xargs open
 https://www.windfinder.com/forecast/jericho_beach_park
 ```
