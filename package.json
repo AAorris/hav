@@ -1,15 +1,13 @@
 {
   "name": "hav",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "get html attribute values",
   "main": "index.js",
   "bin": {
     "hav": "./index.js"
   },
-  "scripts": {
-    "build-standalone": "pkg --public -o hav index.js"
-  },
-  "author": "",
+  "files": ["index.js"],
+  "author": "Aaron Morris <amorris.ca>",
   "license": "MIT",
   "dependencies": {
     "dom-parser": "^0.1.6",

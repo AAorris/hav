@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HAV | HTML Attribute Values</title>
+</head>
+<body>
+    <h1 class="header" name="title">HAV | HTML Attribute Values</h1>
+    <h2 class="header" name="who">Who?</h2>
+    <a id="author" name="amorris" href="https://amorris.ca/">Aaron Morris</a>
+    <h2 class="header" name="what">What?</h2>
+    <p>hav aims to be the easiest way to work with HTML attributes on the command line.</p>
+    <h2 class="header" name="why">Why?</h2>
+    <ul name="why">
+        <li>I have a launch page on my web site. I use it as my new tab page. I want to use that page to launch from the command line too.</li>
+        <li>I have a news page on my web site. I want to open the latest news link from the command line.</li>
+    </ul>
+    <h2 class="header" name="usage">Usage</h2>
+    <ul name="usage">
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav .header</pre></li>
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav .pre text</pre></li>
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav ^h2 name</pre></li>
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav ~why text</pre></li>
+        <li><pre class="example">curl https://hav.amorris.ca/ | hav ~usage text</pre></li>
+        <li><pre class="example">curl https://amorris.ca/launch/ | hav ^a href</pre></li>
+        <li><pre class="example">curl https://amorris.ca/launch/ | hav ^a id</pre></li>
+        <li><pre class="example">curl https://amorris.ca/launch/ | hav music href</pre></li>
+    </ul>
+</body>
+</html>
